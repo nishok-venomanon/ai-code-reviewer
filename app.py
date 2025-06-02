@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 # Load API key
 load_dotenv()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 st.set_page_config(page_title="AI Resume Reviewer", layout="centered")
 st.title("📄 AI Resume Reviewer")
